@@ -6,6 +6,7 @@ import Recipe from './Components/Recipe'
 import Create from './Components/Create'
 import Details from './Components/Details'
 import Update from './Components/Update'
+import About from './Components/About'
 import { useEffect } from 'react'
 const App = () => {
   useEffect(()=>{
@@ -17,7 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Recipe" element={<Recipe />} ></Route>
-        <Route path="/About" ></Route>
+        <Route path="/About" element={<About />}></Route>
         <Route path="/Contact" ></Route>
         <Route path="/Create"  element={<Create />}></Route>
         <Route path="/Recipe/:id"  element={<Details />}></Route>

@@ -21,7 +21,7 @@ const Recipe = () => {
        <div className=' w-[40%] ml-[2%] top-[20%] absolute h-[60vh] flex items-center justify-center flex-col gap-10 '>
         <h1 className='text-[55px] text-shadow-md leading-[60px] text-bold px-10 text-shadow-3xl'>Craft culinary magic with your own unique recipe twist.</h1>
       <p className='px-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore explicabo a architecto culpa deserunt porro eos suscipit quia quod quo!</p>
-       <button className='px-8 py-2 ml-[-59%] bg-[#F34E4C] rounded text-white'
+       <button className='px-8 py-2 ml-[-59%] bg-[#F34E4C] rounded text-white transform transition duration-300 hover:scale-105 active:scale-95 active:shadow-lg'
         style={{
           boxShadow:'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
         }}> <Link to='/Create'>Create Recipe</Link></button>

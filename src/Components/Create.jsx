@@ -19,6 +19,8 @@ const submitHandler = (e) => {
   e.preventDefault();
   const id = nanoid();
   console.log(id);
+  // console.log(recipe);
+
 
   const newRecipe = {id,name, image, description, ingredients, instruction };
   
@@ -31,9 +33,9 @@ const submitHandler = (e) => {
 const Redirect=()=>{
   Navigate(-1);
 }
-const redirectToSuccess = () => {
-  toast.success("Redirecting you to success page. Hold on tight!");
-}
+// const redirectToSuccess = () => {
+//   toast.success("Redirecting you to success page. Hold on tight!");
+// }
 // console.log(recipe);
 
   return (
@@ -65,7 +67,7 @@ const redirectToSuccess = () => {
         
         
          {/* <NavLink to="/Recipe" > */}
-        <button onClick={Redirect} className='px-8 py-3 bg-[#F34E4C] rounded text-white '
+        <button onClick={Redirect} className='px-8 py-3 bg-[#F34E4C] rounded text-white transform transition duration-300 hover:scale-105 active:scale-95 active:shadow-lg '
         style={{
             boxShadow:'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
           }}>Save Recipe</button>
